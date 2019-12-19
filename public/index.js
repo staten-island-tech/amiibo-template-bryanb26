@@ -15,7 +15,7 @@ app.get("/about/:id", async (req,res)=>{
     const name = req.params.id;
     try{
         res.render("index", {
-            title: name
+            title: "Hey"
         });
     }catch(error){
         res.status(500).send("Page not found");
